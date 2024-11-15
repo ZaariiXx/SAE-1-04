@@ -1,0 +1,479 @@
+/* Style Global */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #f0f0f0;
+    font-size: 16px;
+    padding-top: 70px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #00b4d8;
+}
+
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: #ffffff;
+}
+
+/* Navigation horizontale */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    padding: 12px 20px;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(0, 180, 216, 0.2);
+    color: #00b4d8;
+}
+
+/* Menu déroulant pour Missions */
+.menu-missions {
+    position: relative;
+}
+
+.menu-missions > a {
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 12px 20px;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown a:hover {
+    background-color: rgba(0, 180, 216, 0.2);
+    color: #00b4d8;
+}
+
+.menu-missions:hover .dropdown {
+    display: block;
+}
+
+/* Main Section */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Titles */
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #f0f0f0;
+}
+
+/* Conclusion Section */
+.conclusion-section {
+    background-color: #212121;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.conclusion-section h2 {
+    font-size: 28px;
+    color: #00b4d8;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 10px;
+}
+
+.conclusion-section p {
+    font-size: 18px;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Presentation de l'Équipe */
+.presentation {
+    background-color: #212121;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.presentation h2 {
+    font-size: 28px;
+    color: #00b4d8;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 10px;
+}
+
+.presentation p {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des membres de l'équipe */
+.equipe-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.equipe-membre {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.equipe-info h3 {
+    margin: 0;
+    color: #00b4d8;
+    font-size: 22px;
+}
+
+/* Plan du Rapport */
+.plan-rapport {
+    background-color: #212121;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.plan-rapport h2 {
+    font-size: 28px;
+    color: #00b4d8;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 10px;
+}
+
+.rapport-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rapport-item {
+    margin-bottom: 20px;
+}
+
+.rapport-title {
+    font-size: 22px;
+    color: #f0f0f0;
+}
+
+.rapport-description {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .menu-missions {
+        width: 100%;
+    }
+
+    .equipe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equipe-membre {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .conclusion-section {
+        padding: 20px;
+    }
+}
+
+/* Mission Page Styles */
+
+/* Titre principal de la mission */
+.titre-mission {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #00b4d8;
+}
+
+/* Section Problèmes et Solutions */
+.problemes-solutions {
+    background-color: #212121;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Titre de la section */
+.problemes-solutions h3 {
+    font-size: 26px;
+    color: #00b4d8;
+    margin-bottom: 20px;
+}
+
+/* Conteneur des colonnes pour les problèmes et solutions */
+.conteneur-problemes-solutions {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Colonne pour chaque problème et sa solution */
+.colonne-probleme {
+    width: 48%;
+}
+
+/* Problème et solution */
+.probleme, .solution {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.titre-probleme, .titre-solution {
+    font-size: 22px;
+    color: #00b4d8;
+}
+
+/* Section pour l'image du problème 2 */
+.image-probleme {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-probleme-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.exemple-probleme {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Section "Ce que nous avons appris" */
+.enseignements {
+    background-color: #212121;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.enseignements h3 {
+    font-size: 26px;
+    color: #00b4d8;
+    margin-bottom: 20px;
+}
+
+.conteneur-enseignements {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.conteneur-enseignements p {
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .conteneur-problemes-solutions {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .colonne-probleme {
+        width: 100%;
+    }
+
+    .enseignements {
+        padding: 20px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #121212;
+    color: #ccc;
+    font-size: 14px;
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 3px solid #00b4d8;
+}
+
+.footer-table {
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 30px;
+    table-layout: fixed;
+}
+
+.footer-col {
+    padding: 10px;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    color: #00b4d8;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 12px;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #00b4d8;
+    padding-left: 10px;
+}
+
+.footer-table td {
+    border-right: 2px solid #444;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.footer-table td:last-child {
+    border-right: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-table {
+        width: 100%;
+        display: block;
+    }
+
+    .footer-table td {
+        border-right: none;
+        padding: 20px 0;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+}
